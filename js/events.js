@@ -7,10 +7,9 @@ function onClickDelete() {
     employeeNumber: $(this).data("index")
   }, function(response) {
     
+    if(response == '1') {
+      $(this).parent().parent().remove();
+    }    
   });
-
-  
-  
-  $(this).parent().parent().remove();
 
 }
