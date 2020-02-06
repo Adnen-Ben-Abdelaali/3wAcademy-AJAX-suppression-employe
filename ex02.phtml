@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8">
     <title>PDO</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3de7af4f41.js" crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+   
 </head>
 <body>
     <section>
@@ -24,10 +28,13 @@
                         <td><?= $employee['lastName'] ?></td>
                         <td><?= $employee['jobTitle'] ?></td>
                         <td><?= $employee['city'] ?></td>
+                        <td><button type="button" value="submit" data-index="<?= $employee['employeeNumber'] ?>">  <i class="fas fa-trash-alt"></i>   </td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
         </table>
     </section>
+    <script src="js/events.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

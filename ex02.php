@@ -2,7 +2,7 @@
 
 $pdo = new PDO('mysql:host=127.0.0.1;dbname=classicmodels', 'root', '');
 
-$query = $pdo->query('SELECT firstName, lastName, jobTitle, city 
+$query = $pdo->query('SELECT firstName, lastName, jobTitle, city, employeeNumber
 					 FROM employees 
 					 INNER JOIN offices ON employees.officeCode = offices.officeCode'
 					);

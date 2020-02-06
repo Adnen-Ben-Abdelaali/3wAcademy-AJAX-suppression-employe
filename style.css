@@ -1,0 +1,11 @@
+.fa-trash-alt {
+  color: blue;
+  display: block;   
+  padding: 2px 9px 2px 9px;
+  font-size: 130%;
+}
+
+button {
+  border-radius: 25%;
+  background-color: purple;
+}
